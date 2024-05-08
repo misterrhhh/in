@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.4.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="10.4.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="10.4.000" expanded="true" height="68" name="Read CSV" width="90" x="45" y="187">
+        <parameter key="csv_file" value="C:/Users/joaop/Downloads/MERGED_BACKUP.csv"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value="dd-MM-yyyy"/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="UTF-8"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="index.true.integer.attribute"/>
+          <parameter key="1" value="DISTRITO.true.polynominal.attribute"/>
+          <parameter key="2" value="TIPO.true.polynominal.attribute"/>
+          <parameter key="3" value="ANO.true.integer.attribute"/>
+          <parameter key="4" value="AREAPOV.true.real.attribute"/>
+          <parameter key="5" value="AREAMATO.true.real.attribute"/>
+          <parameter key="6" value="AREAAGRIC.true.real.attribute"/>
+          <parameter key="7" value="AREATOTAL.true.real.attribute"/>
+          <parameter key="8" value="REACENDIMENTOS.true.integer.attribute"/>
+          <parameter key="9" value="QUEIMADA.true.integer.attribute"/>
+          <parameter key="10" value="FALSOALARME.true.integer.attribute"/>
+          <parameter key="11" value="FOGACHO.true.integer.attribute"/>
+          <parameter key="12" value="INCENDIO.true.integer.attribute"/>
+          <parameter key="13" value="AGRICOLA.true.integer.attribute"/>
+          <parameter key="14" value="NCCO.true.real.attribute"/>
+          <parameter key="15" value="NOMECCO.true.integer.attribute"/>
+          <parameter key="16" value="DATAALERTA.true.date.attribute"/>
+          <parameter key="17" value="HORAALERTA.true.polynominal.attribute"/>
+          <parameter key="18" value="LOCAL.true.polynominal.attribute"/>
+          <parameter key="19" value="CONCELHO.true.polynominal.attribute"/>
+          <parameter key="20" value="FREGUESIA.true.polynominal.attribute"/>
+          <parameter key="21" value="FONTEALERTA.true.polynominal.attribute"/>
+          <parameter key="22" value="INE.true.integer.attribute"/>
+          <parameter key="23" value="X.true.integer.attribute"/>
+          <parameter key="24" value="Y.true.integer.attribute"/>
+          <parameter key="25" value="DIA.true.integer.attribute"/>
+          <parameter key="26" value="MES.true.integer.attribute"/>
+          <parameter key="27" value="HORA.true.integer.attribute"/>
+          <parameter key="28" value="OPERADOR.true.polynominal.attribute"/>
+          <parameter key="29" value="PERIMETRO.true.polynominal.attribute"/>
+          <parameter key="30" value="APS.true.polynominal.attribute"/>
+          <parameter key="31" value="CAUSA.true.real.attribute"/>
+          <parameter key="32" value="TIPOCAUSA.true.polynominal.attribute"/>
+          <parameter key="33" value="DHINICIO.true.date.attribute"/>
+          <parameter key="34" value="DHFIM.true.date.attribute"/>
+          <parameter key="35" value="DURACAO.true.real.attribute"/>
+          <parameter key="36" value="HAHORA.true.real.attribute"/>
+          <parameter key="37" value="DATAEXTINCAO.true.date.attribute"/>
+          <parameter key="38" value="HORAEXTINCAO.true.polynominal.attribute"/>
+          <parameter key="39" value="DATA1INTERVENCAO.true.date.attribute"/>
+          <parameter key="40" value="HORA1INTERVENCAO.true.polynominal.attribute"/>
+          <parameter key="41" value="QUEIMA.true.integer.attribute"/>
+          <parameter key="42" value="LAT.true.real.attribute"/>
+          <parameter key="43" value="LON.true.real.attribute"/>
+          <parameter key="44" value="CAUSAFAMILIA.true.polynominal.attribute"/>
+          <parameter key="45" value="TEMPERATURA.true.real.attribute"/>
+          <parameter key="46" value="HUMIDADERELATIVA.true.real.attribute"/>
+          <parameter key="47" value="VENTOINTENSIDADE.true.real.attribute"/>
+          <parameter key="48" value="VENTOINTENSIDADE_VETOR.true.real.attribute"/>
+          <parameter key="49" value="VENTODIRECAO_VETOR.true.real.attribute"/>
+          <parameter key="50" value="PRECEPITACAO.true.real.attribute"/>
+          <parameter key="51" value="FFMC.true.real.attribute"/>
+          <parameter key="52" value="DMC.true.real.attribute"/>
+          <parameter key="53" value="DC.true.real.attribute"/>
+          <parameter key="54" value="ISI.true.real.attribute"/>
+          <parameter key="55" value="BUI.true.real.attribute"/>
+          <parameter key="56" value="FWI.true.real.attribute"/>
+          <parameter key="57" value="DSR.true.real.attribute"/>
+          <parameter key="58" value="THC.true.real.attribute"/>
+          <parameter key="59" value="MODFARSITE.true.real.attribute"/>
+          <parameter key="60" value="ALTITUDEMEDIA.true.real.attribute"/>
+          <parameter key="61" value="DECLIVEMEDIO.true.real.attribute"/>
+          <parameter key="62" value="HORASEXPOSICAOMEDIA.true.polynominal.attribute"/>
+          <parameter key="63" value="DENDIDADERV.true.real.attribute"/>
+          <parameter key="64" value="COSN5VARIEDADE.true.real.attribute"/>
+          <parameter key="65" value="AREAMANCHAMODFARSITE.true.real.attribute"/>
+          <parameter key="66" value="AREASFICHEIROS_GNR.true.polynominal.attribute"/>
+          <parameter key="67" value="AREASFICHEIROS_GTF.true.polynominal.attribute"/>
+          <parameter key="68" value="FICHEIROIMAGEM_GNR.true.polynominal.attribute"/>
+          <parameter key="69" value="AREASFICHEIROSHP_GTF.true.polynominal.attribute"/>
+          <parameter key="70" value="AREASFICHEIROSHPXML_GTF.true.polynominal.attribute"/>
+          <parameter key="71" value="AREASFICHEIRODBF_GTF.true.polynominal.attribute"/>
+          <parameter key="72" value="AREASFICHEIROPRJ_GTF.true.polynominal.attribute"/>
+          <parameter key="73" value="AREASFICHEIROSBN_GTF.true.polynominal.attribute"/>
+          <parameter key="74" value="AREASFICHEIROSBX_GTF.true.polynominal.attribute"/>
+          <parameter key="75" value="AREASFICHEIROSHX_GTF.true.polynominal.attribute"/>
+          <parameter key="76" value="AREASFICHEIROZIP_SAA.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="date_to_nominal" compatibility="10.4.000" expanded="true" height="82" name="Date to Nominal" width="90" x="179" y="187">
+        <parameter key="attribute_name" value="DATAEXTINCAO"/>
+        <parameter key="date_format" value="dd-MM-yyy"/>
+        <parameter key="time_zone" value="Portugal"/>
+        <parameter key="locale" value="Portuguese (Portugal)"/>
+        <parameter key="keep_old_attribute" value="false"/>
+      </operator>
+      <operator activated="true" class="date_to_nominal" compatibility="10.4.000" expanded="true" height="82" name="Date to Nominal (2)" width="90" x="313" y="187">
+        <parameter key="attribute_name" value="DATAALERTA"/>
+        <parameter key="date_format" value="dd-MM-yyy"/>
+        <parameter key="time_zone" value="Portugal"/>
+        <parameter key="locale" value="Portuguese (Portugal)"/>
+        <parameter key="keep_old_attribute" value="false"/>
+      </operator>
+      <operator activated="true" class="date_to_nominal" compatibility="10.4.000" expanded="true" height="82" name="Date to Nominal (3)" width="90" x="447" y="187">
+        <parameter key="attribute_name" value="DATA1INTERVENCAO"/>
+        <parameter key="date_format" value="dd-MM-yyy"/>
+        <parameter key="time_zone" value="Portugal"/>
+        <parameter key="locale" value="Portuguese (Portugal)"/>
+        <parameter key="keep_old_attribute" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:generate_columns" compatibility="10.4.000" expanded="true" height="82" name="Generate Attributes" width="90" x="581" y="187">
+        <list key="function_descriptions">
+          <parameter key="DATAEXTINCAO" value="concat(DATAEXTINCAO, &quot; &quot;, HORAEXTINCAO)"/>
+          <parameter key="DATAALERTA" value="concat(DATAALERTA, &quot; &quot;, HORAALERTA)"/>
+          <parameter key="DATA1INTERVENCAO" value="concat(DATA1INTERVENCAO, &quot; &quot;,HORA1INTERVENCAO)"/>
+        </list>
+        <parameter key="keep_all_columns" value="true"/>
+        <parameter key="default_time_zone" value="UTC"/>
+      </operator>
+      <operator activated="true" class="declare_missing_value" compatibility="10.4.000" expanded="true" height="82" name="Declare Missing Value" width="90" x="715" y="187">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="DATAEXTINCAO"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="mode" value="nominal"/>
+        <parameter key="nominal_value" value=" "/>
+        <parameter key="expression_value" value=""/>
+      </operator>
+      <operator activated="true" class="declare_missing_value" compatibility="10.4.000" expanded="true" height="82" name="Declare Missing Value (2)" width="90" x="849" y="187">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="DATA1INTERVENCAO"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="mode" value="nominal"/>
+        <parameter key="nominal_value" value=" "/>
+        <parameter key="expression_value" value=""/>
+      </operator>
+      <operator activated="true" class="filter_examples" compatibility="10.4.000" expanded="true" height="103" name="Filter Examples" width="90" x="179" y="391">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="true"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="DATAEXTINCAO.equals.?"/>
+        </list>
+        <parameter key="filters_logic_and" value="true"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="true" class="nominal_to_date" compatibility="10.4.000" expanded="true" height="82" name="Nominal to Date" width="90" x="313" y="391">
+        <parameter key="attribute_name" value="DATAEXTINCAO"/>
+        <parameter key="date_type" value="date_time"/>
+        <parameter key="date_format" value="dd-MM-yyyy hh:mm"/>
+        <parameter key="time_zone" value="Portugal"/>
+        <parameter key="locale" value="Portuguese"/>
+        <parameter key="keep_old_attribute" value="false"/>
+      </operator>
+      <operator activated="true" class="nominal_to_date" compatibility="10.4.000" expanded="true" height="82" name="Nominal to Date (2)" width="90" x="447" y="391">
+        <parameter key="attribute_name" value="DATAALERTA"/>
+        <parameter key="date_type" value="date_time"/>
+        <parameter key="date_format" value="dd-MM-yyyy hh:mm"/>
+        <parameter key="time_zone" value="Portugal"/>
+        <parameter key="locale" value="Portuguese (Portugal)"/>
+        <parameter key="keep_old_attribute" value="false"/>
+      </operator>
+      <operator activated="true" class="nominal_to_date" compatibility="10.4.000" expanded="true" height="82" name="Nominal to Date (3)" width="90" x="581" y="391">
+        <parameter key="attribute_name" value="DATA1INTERVENCAO"/>
+        <parameter key="date_type" value="date_time"/>
+        <parameter key="date_format" value="dd-MM-yyyy hh:mm"/>
+        <parameter key="time_zone" value="Portugal"/>
+        <parameter key="locale" value="Portuguese (Portugal)"/>
+        <parameter key="keep_old_attribute" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:select_attributes" compatibility="10.4.000" expanded="true" height="82" name="Select Attributes" width="90" x="715" y="391">
+        <parameter key="type" value="exclude attributes"/>
+        <parameter key="attribute_filter_type" value="a subset"/>
+        <parameter key="select_attribute" value=""/>
+        <parameter key="select_subset" value="ANO␞APS␞AREAMANCHAMODFARSITE␞AREASFICHEIRODBF_GTF␞AREASFICHEIROPRJ_GTF␞AREASFICHEIROS_GNR␞AREASFICHEIROS_GTF␞AREASFICHEIROSBN_GTF␞AREASFICHEIROSBX_GTF␞AREASFICHEIROSHP_GTF␞AREASFICHEIROSHPXML_GTF␞AREASFICHEIROSHX_GTF␞AREASFICHEIROZIP_SAA␞CAUSA␞CAUSAFAMILIA␞CONCELHO␞DHFIM␞DHINICIO␞DIA␞FICHEIROIMAGEM_GNR␞HAHORA␞HORA␞HORA1INTERVENCAO␞HORAALERTA␞HORAEXTINCAO␞HORASEXPOSICAOMEDIA␞index␞INE␞LOCAL␞MES␞MODFARSITE␞NCCO␞NOMECCO␞OPERADOR␞PERIMETRO␞QUEIMA␞QUEIMADA␞VENTODIRECAO_VETOR␞VENTOINTENSIDADE_VETOR␞X␞Y"/>
+        <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
+      </operator>
+      <operator activated="true" class="write_csv" compatibility="10.4.000" expanded="true" height="82" name="Write CSV" width="90" x="849" y="493">
+        <parameter key="csv_file" value="C:/Users/joaop/OneDrive/Ambiente de Trabalho/output.csv"/>
+        <parameter key="column_separator" value=","/>
+        <parameter key="write_attribute_names" value="true"/>
+        <parameter key="quote_nominal_values" value="true"/>
+        <parameter key="format_date_attributes" value="true"/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="append_to_file" value="false"/>
+        <parameter key="encoding" value="SYSTEM"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Date to Nominal" to_port="example set input"/>
+      <connect from_op="Date to Nominal" from_port="example set output" to_op="Date to Nominal (2)" to_port="example set input"/>
+      <connect from_op="Date to Nominal (2)" from_port="example set output" to_op="Date to Nominal (3)" to_port="example set input"/>
+      <connect from_op="Date to Nominal (3)" from_port="example set output" to_op="Generate Attributes" to_port="table input"/>
+      <connect from_op="Generate Attributes" from_port="table output" to_op="Declare Missing Value" to_port="example set input"/>
+      <connect from_op="Declare Missing Value" from_port="example set output" to_op="Declare Missing Value (2)" to_port="example set input"/>
+      <connect from_op="Declare Missing Value (2)" from_port="example set output" to_op="Filter Examples" to_port="example set input"/>
+      <connect from_op="Filter Examples" from_port="example set output" to_op="Nominal to Date" to_port="example set input"/>
+      <connect from_op="Nominal to Date" from_port="example set output" to_op="Nominal to Date (2)" to_port="example set input"/>
+      <connect from_op="Nominal to Date (2)" from_port="example set output" to_op="Nominal to Date (3)" to_port="example set input"/>
+      <connect from_op="Nominal to Date (3)" from_port="example set output" to_op="Select Attributes" to_port="example set input"/>
+      <connect from_op="Select Attributes" from_port="example set output" to_op="Write CSV" to_port="input"/>
+      <connect from_op="Write CSV" from_port="through" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
